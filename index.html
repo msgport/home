@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon - Msgport</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #333;
+        font-family: Arial, sans-serif;
+    }
+    #title {
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    canvas {
+        background: #fff;
+        display: block;
+    }
+    #message {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div id="title">
+        Msgport, Programmable Cross-Chain Messaging Port<br>Coming Soon...
+    </div>
+<canvas id="gameCanvas"></canvas>
+<div id="message"></div>
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = 800;
+canvas.height = 600;
+
+const nodes = [
+    { x: 100, y: 100, size: 60 },
+    { x: 700, y: 100, size: 60 },
+    { x: 100, y: 500, size: 60 },
+    { x: 700, y: 500, size: 60 },
+    { x: 400, y: 300, size: 60 },
+    { x: 200, y: 300, size: 60 },
+    { x: 600, y: 300, size: 60 }
+];
+
+const funnyMessages = [
+    "You've unlocked a secret of the universe!",
+    "Whoops! That was a slippery one!",
+    "Caught ya! You're faster than blockchain gossip!",
+    "Excellent snag! Are you a professional?",
+    "Bazinga! You nailed it!"
+];
+
+const messages = createMessages(5);
+
+function createMessages(num) {
+    let msgs = [];
+    for (let i = 0; i < num; i++) {
+        let node = nodes[Math.floor(Math.random() * nodes.length)];
+        msgs.push({
+            x: node.x,
+            y: node.y,
+            dx: (Math.random() - 0.5) * 2,
+            dy: (Math.random() - 0.5) * 2,
+            size: 15
+        });
+    }
+    return msgs;
+}
+
+function drawNodes() {
+    nodes.forEach(node => {
+        ctx.strokeStyle = 'grey';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(node.x - node.size / 2, node.y - node.size / 2, node.size, node.size);
+    });
+}
+
+function drawMessages() {
+    messages.forEach(msg => {
+        ctx.beginPath();
+        ctx.arc(msg.x, msg.y, msg.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+    });
+}
+
+function updateCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawNodes();
+    drawMessages();
+    messages.forEach(msg => {
+        msg.x += msg.dx;
+        msg.y += msg.dy;
+
+        // Bounce off the walls
+        if (msg.x + msg.size > canvas.width || msg.x - msg.size < 0) {
+            msg.dx *= -1;
+        }
+        if (msg.y + msg.size > canvas.height || msg.y - msg.size < 0) {
+            msg.dy *= -1;
+        }
+    });
+    requestAnimationFrame(updateCanvas);
+}
+
+canvas.addEventListener('click', function(e) {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    messages.forEach((msg, index) => {
+        if (Math.sqrt((x - msg.x) ** 2 + (y - msg.y) ** 2) < msg.size) {
+            const randomIndex = Math.floor(Math.random() * funnyMessages.length);
+            document.getElementById('message').textContent = funnyMessages[randomIndex];
+            messages.splice(index, 1); // Remove the message
+        }
+    });
+});
+
+updateCanvas();
+</script>
+</body>
+</html>
