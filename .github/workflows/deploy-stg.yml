@@ -25,6 +25,7 @@ jobs:
           preview_output: true
           project_name: msgport-home
           dist_path: .
+          alias_domain: "msgport-home-stg"
           script_run: false
           enable_cache: true
           enable_notify_slack: false
