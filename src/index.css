@@ -5,23 +5,23 @@
 
 @font-face {
   font-family: JetBrainsMono-Thin;
-  src: url("/assets/fonts/EuclidCircularALight.ttf") format("woff2");
+  src: url("/assets/fonts/EuclidCircularA-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: EuclidCircularA-Light;
-  src: url("/assets/fonts/EuclidCircularALight.ttf") format("woff2");
+  src: url("/assets/fonts/EuclidCircularA-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: EuclidCircularA-Regular;
-  src: url("/assets/fonts/EuclidCircularARegular.ttf") format("woff2");
+  src: url("/assets/fonts/EuclidCircularA-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: EuclidCircularA-Medium;
-  src: url("/assets/fonts/EuclidCircularAMedium.ttf") format("woff2");
+  src: url("/assets/fonts/EuclidCircularA-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: EuclidCircularA-Bold;
-  src: url("/assets/fonts/EuclidCircularABold.ttf") format("woff2");
+  src: url("/assets/fonts/EuclidCircularA-Bold.woff2") format("woff2");
 }
 
 body {
