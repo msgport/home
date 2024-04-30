@@ -2,30 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: JetBrainsMono-Thin;
   src: url("/assets/fonts/EuclidCircularA-Light.woff2") format("woff2");
 }
 @font-face {
-  font-family: EuclidCircularA-Light;
+  font-family: EuclidCircularA;
   src: url("/assets/fonts/EuclidCircularA-Light.woff2") format("woff2");
+  font-weight: 300;
 }
 @font-face {
-  font-family: EuclidCircularA-Regular;
+  font-family: EuclidCircularA;
   src: url("/assets/fonts/EuclidCircularA-Regular.woff2") format("woff2");
+  font-weight: 400;
 }
 @font-face {
-  font-family: EuclidCircularA-Medium;
+  font-family: EuclidCircularA;
   src: url("/assets/fonts/EuclidCircularA-Medium.woff2") format("woff2");
+  font-weight: 500;
 }
 @font-face {
-  font-family: EuclidCircularA-Bold;
+  font-family: EuclidCircularA;
   src: url("/assets/fonts/EuclidCircularA-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+html {
+  font-family: EuclidCircularA;
 }
 
 body {
-  background-color: #0D150F;
+  background-color: #0d150f;
 }
 
 @layer components {
