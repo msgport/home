@@ -13,23 +13,23 @@ const EnablingDiverseItems = ({
     <div className="lg:w-[40.625rem]">
       {isDiverse && (
         <div>
-          <h3 className="text-[2.875rem] leading-[3.625rem] font-[300] text-white">
+          <h3 className="text-[1.875rem] leading-[2.375rem] lg:text-[2.875rem] lg:leading-[3.625rem] font-[300] text-white">
             Enabling Diverse
           </h3>
-          <h4 className="text-[2.875rem] leading-[3.625rem] font-[700] text-[#00D448] tracking-[0.125rem]">
+          <h4 className="text-[1.875rem] leading-[2.375rem] lg:text-[2.875rem] lg:leading-[3.625rem] font-[700] text-[#00D448] tracking-[0.125rem]">
             Cross-Chain Interactions
           </h4>
-          <h4 className="text-[2.5rem] leading-[3.17rem] font-[700] text-white mt-[6.25rem]">
+          <h4 className="text-[1.5rem] leading-[1.875rem] lg:text-[2.5rem] lg:leading-[3.17rem] font-[700] text-white mt-[1.875rem] lg:mt-[6.25rem]">
             XAccount
           </h4>
         </div>
       )}
       {!isDiverse && (
-        <h4 className="text-[2.5rem] leading-[3.17rem] font-[700] text-white">
+        <h4 className="text-[1.5rem] lg:text-[2.5rem] leading-[1.875rem] lg:leading-[3.17rem] font-[700] text-white mt-[1.875rem] lg:mt-0">
           Order Clearing(Thirdparty bridge)
         </h4>
       )}
-      <p className="text-[1rem] leading-[1.563rem] font-[300] text-white my-[1.875rem]">
+      <p className="text-[0.875rem] leading-[1.375rem] lg:text-[1rem] lg:leading-[1.563rem] font-[300] text-white my-[1.875rem]">
         {text}
       </p>
       <img

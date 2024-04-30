@@ -6,7 +6,7 @@ const MsgportInterface = () => {
   const [selectedItem, setSelectedItem] = useState(0);
   return (
     <Container classes="lg:flex items-center justify-between gap-[6.25rem]">
-      <div className="bg-[#000] rounded-[3.125rem] p-[3.125rem] flex flex-col justify-end items-end">
+      <div className="bg-[#000] rounded-[3.125rem] p-[1.25rem] lg:p-[3.125rem] flex flex-col justify-end items-end">
         <h2 className="text-[1.875rem] leading-[2.375rem] font-bold text-white">
           Msgport Interface
         </h2>
@@ -15,7 +15,16 @@ const MsgportInterface = () => {
           interface to send arbitrary data between contracts on different
           blockchain networks
         </p>
-        <img src="/images/code.png" alt="codescreen" className="w-full" />
+        <img
+          src="/images/code.png"
+          alt="codescreen"
+          className="w-full hidden lg:block"
+        />
+        <img
+          src="/images/mobilecode.png"
+          alt="codescreen"
+          className="w-full lg:hidden block"
+        />
       </div>
       <div className="flex flex-col items-center justify-center gap-[1.875rem] lg:w-[26.375rem]">
         <h4 className="text-[1.875rem] leading-[2.375rem] font-[300] text-white">
@@ -29,7 +38,7 @@ const MsgportInterface = () => {
             <button
               key={item.id}
               className={
-                "text-[#2A2A2A] text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] flex items-center justify-center py-[1.063rem]"
+                "text-[#000000] lg:text-[#2A2A2A] text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] flex items-center justify-center py-[1.063rem] "
               }
               style={{
                 backgroundColor:
@@ -41,7 +50,7 @@ const MsgportInterface = () => {
             </button>
           );
         })}
-        <button className="flex items-center justify-center py-[1.063rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] w-full">
+        <button className="flex items-center justify-center py-[0.563rem] lg:py-[1.063rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] w-full">
           <span className="font-[600] text-[1rem] text-white leading-[1.563rem]">
             try it now
           </span>

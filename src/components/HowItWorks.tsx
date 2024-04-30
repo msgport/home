@@ -1,13 +1,13 @@
 const HowItWorks = () => {
   return (
     <div className="lg:absolute lg:top-[77.5rem]">
-      <h2 className="text-[4.375rem] leading-[5.544rem] font-[300] text-white tracking-[0.125rem]">
+      <h2 className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[300] text-white tracking-[0.125rem]">
         How It
-        <span className="text-[4.375rem] leading-[5.544rem] font-[700] text-[#00D448] ">
-          Works
+        <span className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[700] text-[#00D448] ">
+          works
         </span>
       </h2>
-      <div className="lg:flex items-center gap-[6.25rem] bg-[#0D150F] opacity-70 w-full">
+      <div className="mt-[1.875rem] lg:mt-0 lg:flex items-center gap-[6.25rem] lg:bg-[#0d150fb3] w-full">
         <div className="relative pl-[1.875rem] lg:w-[30.625rem]">
           <img
             src="/assets/icons/green.svg"
@@ -24,7 +24,7 @@ const HowItWorks = () => {
             technologies
           </p>
         </div>
-        <div className="relative pl-[1.875rem] lg:w-[30.625rem]">
+        <div className="mt-[1.875rem] lg:mt-0 relative pl-[1.875rem] lg:w-[30.625rem]">
           <img
             src="/assets/icons/green.svg"
             alt="green"
