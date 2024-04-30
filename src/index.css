@@ -35,20 +35,4 @@ body {
   background-color: #0d150f;
 }
 
-@layer components {
-  .text-thin {
-    @apply font-[EuclidCircularA-Thin] font-thin;
-  }
-  .text-light {
-    @apply font-[EuclidCircularA-Light] font-light;
-  }
-  .text-normal {
-    @apply font-[EuclidCircularA-Regular] font-normal;
-  }
-  .text-normal {
-    @apply font-[EuclidCircularA-Medium] font-medium;
-  }
-  .text-bold {
-    @apply font-[EuclidCircularA-Bold] font-bold;
-  }
-}
+
