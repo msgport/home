@@ -1,15 +1,14 @@
-import React from "react";
 import Container from "./Container";
 
 const Hero = () => {
   return (
-    <Container classes='bg-[url("/images/heroBG.png")] bg-cover lg:relative min-h-[59.75rem]'>
+    <Container classes='bg-[url("/images/heroBG.png")] bg-cover lg:relative min-h-[44.188rem] lg:min-h-[59.75rem]'>
       <img
         src="/images/hero1.png"
         alt="heroimage"
         className="lg:w-[56.25rem] lg:h-[32.813rem] absolute top-[6.25rem] right-[6.25rem]"
       />
-      <div className="lg:w-[51.688rem] lg:h-[22.188rem] lg:absolute lg:top-[28.125rem] right-[42.063rem]">
+      <div className="lg:w-[51.688rem] lg:h-[22.188rem] lg:absolute lg:top-[28.125rem] lg:right-[42.063rem]">
         <h4 className="text-[#fff] lg:text-[3.75rem] font-[300] lg:leading-[4.755rem] lg:tracking-[0.125rem]">
           Programmable
         </h4>
