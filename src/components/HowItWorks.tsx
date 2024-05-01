@@ -1,6 +1,6 @@
 const HowItWorks = () => {
   return (
-    <div className="lg:absolute lg:top-[77.5rem]">
+    <div className="lg:absolute lg:top-[57rem] 2xl:top-[77.5rem]">
       <h2 className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[300] text-white tracking-[0.125rem]">
         How It
         <span className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[700] text-[#00D448] ">

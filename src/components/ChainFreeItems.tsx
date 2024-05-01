@@ -14,13 +14,13 @@ interface ChainFreeItemsProps {
 
 const ChainFreeItems: React.FC<ChainFreeItemsProps> = ({ data }) => {
   return (
-    <div className="lg:w-[40.625rem] lg:h-[17.688rem] ">
+    <div className="lg:w-[25rem] 2xl:w-[38rem] 3xl:w-[40.625rem] 2xl:h-[17.688rem]">
       <img
         src={data.icon}
         alt={data.greenTitle}
         className="w-[3.75rem] h-[3.75rem]"
       />
-      <div className="lg:flex items-center border-b border-b-[#6F6F6F] lg:mb-[1.25rem] gap-[0.625rem] mt-[1.25rem] lg:mt-0">
+      <div className="2xl:flex items-center border-b border-b-[#6F6F6F] lg:mb-[1.25rem] gap-[0.625rem] mt-[1.25rem] lg:mt-0">
         <h3 className="text-[1.875rem] leading-[2.375rem] lg:text-[2.875rem] lg:leading-[3.625rem] font-[700] text-[#00D448] lg:py-[1.25rem]">
           {data.greenTitle}
         </h3>

@@ -10,8 +10,8 @@ const MsgportInterface = () => {
   const [activeTitle, setActiveTitle] = useState(menu[0].title);
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[0];
   return (
-    <Container classes="lg:flex lg:flex-wrap items-center justify-between gap-[6.25rem] mt-[6.25rem] lg:mt-0">
-      <div className="bg-[#000] rounded-[3.125rem] p-[1.25rem] lg:p-[3.125rem] lg:flex flex-col justify-end items-end hidden lg:max-w-[54.875rem]">
+    <Container classes="lg:flex items-center justify-between gap-[6.25rem] mt-[6.25rem] lg:mt-0">
+      <div className="bg-[#000] rounded-[3.125rem] p-[1.25rem] lg:p-[3.125rem] lg:flex flex-col justify-end items-end hidden lg:max-w-[35rem] 2xl:max-w-[54.875rem]">
         <h2 className="text-[1.875rem] leading-[2.375rem] font-bold text-white">
           Msgport Interface
         </h2>
@@ -24,7 +24,7 @@ const MsgportInterface = () => {
         <PrettyCode
           code={activeMenu.code}
           language={activeMenu.language}
-          className="lg:max-w-[48.625rem]"
+          className="lg:max-w-[30rem] 2xl:max-w-[48.625rem]"
         />
       </div>
       <div className="flex flex-col lg:items-center lg:justify-center gap-[1.875rem] lg:w-[26.375rem]">

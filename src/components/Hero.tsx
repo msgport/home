@@ -2,7 +2,7 @@ import Container from "./Container";
 
 const Hero = () => {
   return (
-    <Container classes='lg:bg-[url("/images/heroBG.png")] bg-cover lg:relative mt-[6.25rem] 2xl:mt-0 lg:min-h-[59.75rem]'>
+    <Container classes='lg:bg-[url("/images/heroBG.png")] bg-cover lg:relative mt-[6.25rem] lg:mt-0 lg:min-h-[59.75rem]'>
       {/* <img
         src="/images/hero1.png"
         alt="heroimage"
@@ -12,10 +12,10 @@ const Hero = () => {
         src="/images/hero.mp4"
         autoPlay
         loop
-        className="w-full lg:w-[56.25rem] lg:h-[32.813rem] 2xl:absolute lg:top-[6.25rem] lg:right-[6.25rem] object-cover"
+        className="w-full lg:w-[56.25rem] lg:h-[32.813rem] lg:absolute lg:top-[6.25rem] lg:right-[6.25rem] object-cover"
       ></video>
 
-      <div className="mt-[1.875rem] 2xl:mt-0 flex items-center justify-center flex-col lg:block lg:w-[51.688rem] lg:h-[22.188rem] 2xl:absolute lg:top-[28.125rem] lg:right-[42.063rem]">
+      <div className="mt-[1.875rem] 2xl:mt-0 flex items-center justify-center flex-col lg:block lg:w-[51.688rem] lg:h-[22.188rem] lg:absolute lg:top-[35rem] 2xl:top-[28.125rem] 2xl:right-[42.063rem]">
         <h4 className="text-[#fff] text-[1.25rem] lg:text-[3.75rem] font-[300] lg:leading-[4.755rem] lg:tracking-[0.125rem]">
           Programmable
         </h4>
