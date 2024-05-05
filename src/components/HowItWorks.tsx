@@ -1,14 +1,16 @@
 const HowItWorks = () => {
   return (
-    <div className="lg:absolute lg:top-[57rem] 2xl:top-[77.5rem]">
-      <h2 className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[300] text-white tracking-[0.125rem]">
-        How It
+    <div className="lg:absolute lg:top-[86rem] 2xl:top-[77.5rem]">
+      <div className="flex items-center gap-[0.6rem]">
+        <h2 className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[300] text-white tracking-[0.125rem]">
+          How It
+        </h2>
         <span className="text-[1.875rem] leading-[2.375rem] lg:text-[4.375rem] lg:leading-[5.544rem] font-[700] text-[#00D448] ">
-          works
+          Works
         </span>
-      </h2>
-      <div className="mt-[1.875rem] lg:mt-0 lg:flex items-center gap-[6.25rem] lg:bg-[#0d150fb3] w-full">
-        <div className="relative pl-[1.875rem] lg:w-[30.625rem]">
+      </div>
+      <div className="mt-[1.875rem] 3xl:mt-0 4xl:mt-[3.125rem] lg:flex lg:gap-[3.125rem] 3xl:gap-[6.25rem] gap-[6.25rem] lg:bg-[#0d150fb3] w-full">
+        <div className="relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem]">
           <img
             src="/assets/icons/green.svg"
             alt="green"
@@ -24,7 +26,7 @@ const HowItWorks = () => {
             technologies
           </p>
         </div>
-        <div className="mt-[1.875rem] lg:mt-0 relative pl-[1.875rem] lg:w-[30.625rem]">
+        <div className="mt-[1.875rem] lg:mt-0 relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem]">
           <img
             src="/assets/icons/green.svg"
             alt="green"
