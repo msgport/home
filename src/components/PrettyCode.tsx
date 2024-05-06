@@ -48,7 +48,7 @@ export default function PrettyCode({
   }, []);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="defaultScroll">
       <SyntaxHighlighter
         language={language}
         style={xonokai}
