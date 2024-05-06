@@ -11,7 +11,7 @@ const MsgportInterface = () => {
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[0];
   return (
     <Container classes="lg:flex items-center justify-between gap-[3.125rem] lg:gap-[6.25rem] mt-[6.25rem] lg:mt-0">
-      <div className="bg-[#000] rounded-[3.125rem] p-[1.25rem] lg:p-[3.125rem] lg:flex flex-col justify-end items-end hidden lg:max-w-[37.563rem] xl:max-w-[54.875rem] 4xl:max-w-[74.875rem]">
+      <div className="bg-[#000] rounded-[3.125rem] p-[1.25rem] lg:p-[3.125rem] lg:flex flex-col justify-end items-end hidden lg:max-w-[37.563rem] 2xl:max-w-[54.875rem] 4xl:max-w-[74.875rem]">
         <h2 className="text-[1.875rem] leading-[2.375rem] font-bold text-white">
           Msgport Interface
         </h2>
@@ -24,10 +24,10 @@ const MsgportInterface = () => {
         <PrettyCode
           code={activeMenu.code}
           language={activeMenu.language}
-          className="lg:max-w-[32rem] xl:max-w-[48.625rem] 4xl:max-w-[70rem]"
+          className="lg:max-w-[32rem] 2xl:max-w-[48.625rem] 4xl:max-w-[70rem]"
         />
       </div>
-      <div className="flex flex-col lg:items-center lg:justify-center gap-[1.875rem] lg:w-[14.813rem] xl:w-[26.375rem] lg:px-[1.25rem] 3xl:px-0 4xl:w-[26.375rem]">
+      <div className="flex flex-col lg:items-center lg:justify-center gap-[1.875rem] lg:w-auto xl:w-[26.375rem] lg:px-[1.25rem] 3xl:px-0 4xl:w-[26.375rem]">
         <h4 className="text-[1.875rem] leading-[2.375rem] lg:text-[1.875rem] lg:leading-[2.375rem] font-[300] text-white">
           Start building with
         </h4>

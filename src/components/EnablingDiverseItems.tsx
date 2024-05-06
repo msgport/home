@@ -12,7 +12,7 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[2];
 
   return (
-    <div className="lg:max-w-[27.313rem] xl:max-w-[40.625rem] 4xl:max-w-[50.625rem]">
+    <div className="lg:max-w-[27.313rem] xl:max-w-[35rem] 2xl:max-w-[40.625rem] 4xl:max-w-[50.625rem]">
       {isDiverse && (
         <div>
           <h3 className="text-[1.875rem] leading-[2.375rem] lg:text-[2.875rem] lg:leading-[3.625rem] font-[300] text-white">
