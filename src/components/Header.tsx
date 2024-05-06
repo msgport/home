@@ -12,19 +12,19 @@ const Header = () => {
       />
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
         <a
-          href=""
+          href=" https://docs.msgport.xyz/learn/interfaces/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Learn
         </a>
         <a
-          href=""
+          href="https://docs.msgport.xyz/build/use-cases/overview/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Build
         </a>
         <a
-          href=""
+          href="https://docs.msgport.xyz/community/ringdao/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Community
