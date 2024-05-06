@@ -12,18 +12,21 @@ const Header = () => {
       />
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
         <a
+          target="_blank"
           href=" https://docs.msgport.xyz/learn/interfaces/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Learn
         </a>
         <a
+          target="_blank"
           href="https://docs.msgport.xyz/build/use-cases/overview/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Build
         </a>
         <a
+          target="_blank"
           href="https://docs.msgport.xyz/community/ringdao/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
@@ -41,18 +44,21 @@ const Header = () => {
       {submenu && (
         <div className="bg-[#000000b3] rounded-[1.25rem] flex flex-col items-center justify-center p-[2.5rem] absolute right-[1.25rem] top-[3.125rem] gap-[2.5rem]">
           <a
+            target="_blank"
             href=" https://docs.msgport.xyz/learn/interfaces/"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
             Learn
           </a>
           <a
+            target="_blank"
             href="https://docs.msgport.xyz/build/use-cases/overview/"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
             Build
           </a>
           <a
+            target="_blank"
             href="https://docs.msgport.xyz/community/ringdao/"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
