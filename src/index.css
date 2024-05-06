@@ -36,4 +36,16 @@ body {
 }
 
 
+.defaultScroll {
+  /* Change background color of scroll */
+  ::-webkit-scrollbar {
+    background-color: transparent; /* Change to black */
+    height: 1rem;
+  }
 
+  /* Change scrollbar thumb color */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(118, 180, 230); /* Change to pink */
+    border-radius: 0.5rem;
+  }
+}

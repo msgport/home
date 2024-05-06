@@ -12,6 +12,7 @@ const Hero = () => {
         src="/images/hero.mp4"
         autoPlay
         loop
+        muted
         className="w-full lg:w-[43.813rem] 3xl:w-[56.25rem] lg:top-[3.75rem] lg:right-[3.125rem] lg:h-[25.625rem] 3xl:h-[32.813rem] lg:absolute 3xl:top-[6.25rem] 3xl:right-[6.25rem] object-cover lg:rounded-[500px] 4xl-[56.25rem]"
       ></video>
 
