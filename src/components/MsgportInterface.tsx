@@ -91,7 +91,7 @@ const MsgportInterface = () => {
         })}
         <button className="flex items-center justify-center py-[0.563rem] lg:py-[1.063rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] w-full">
           <span className="font-[600] text-[1rem] text-white leading-[1.563rem]">
-            try it now
+            Try it now
           </span>
           <img
             src="/assets/icons/go.svg"
