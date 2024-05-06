@@ -1,6 +1,5 @@
 import PrettyCode from "./PrettyCode";
 import { menu } from "../data/code";
-import { useState } from "react";
 
 interface EnablingDiverseTypes {
   isDiverse: boolean;
@@ -8,7 +7,7 @@ interface EnablingDiverseTypes {
 }
 
 const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
-  const [activeTitle, setActiveTitle] = useState(menu[2].title);
+  const activeTitle = menu[2].title;
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[2];
 
   return (
