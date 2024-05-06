@@ -7,7 +7,7 @@ import { menu } from "../data/code";
 
 const MsgportInterface = () => {
   const [selectedItem, setSelectedItem] = useState(0);
-  const [activeTitle, setActiveTitle] = useState(menu[0].title);
+  const activeTitle = menu[0].title;
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[0];
   return (
     <Container classes="lg:flex items-center justify-between gap-[3.125rem] lg:gap-[6.25rem] mt-[6.25rem] lg:mt-0">
