@@ -24,10 +24,10 @@ jobs:
           vercel_group: itering
           preview_output: true
           project_name: msgport-home
-          dist_path: .
+          dist_path: dist
           alias_domain: "msgport-home-stg"
           script_run: false
           enable_cache: true
           enable_notify_slack: false
-          slack_channel: darwinia-docs
+          slack_channel: public-msgport
           slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}

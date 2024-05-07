@@ -15,22 +15,18 @@ jobs:
           repository: darwinia-network/devops
           path: .github
 
-      - name: Build
-        run: npm i && npm run build
-        
-
-      # - uses: ./.github/actions/smart-vercel
-      #   name: Deploy to Vercel
-      #   with:
-      #     vercel_token: ${{ secrets.VERCEL_TOKEN }}
-      #     vercel_group: itering
-      #     preview_output: true
-      #     project_name: msgport-home
-      #     dist_path: .
-      #     alias_domain: "msgport-home-dev"
-      #     script_run: false
-      #     enable_cache: true
-      #     enable_notify_comment: true
-      #     enable_notify_slack: false
-      #     slack_channel: darwinia-docs
-      #     slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
+      - uses: ./.github/actions/smart-vercel
+        name: Deploy to Vercel
+        with:
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_group: itering
+          preview_output: true
+          project_name: msgport-home
+          dist_path: dist
+          alias_domain: "msgport-home-dev"
+          script_run: false
+          enable_cache: true
+          enable_notify_comment: true
+          enable_notify_slack: false
+          slack_channel: public-msgport
+          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
