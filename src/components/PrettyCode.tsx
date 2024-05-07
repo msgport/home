@@ -1,6 +1,7 @@
 import { CSSProperties, useEffect, useRef } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { xonokai } from "react-syntax-highlighter/dist/esm/styles/prism/";
+// @ts-ignore
+import xonokai from "react-syntax-highlighter/dist/esm/styles/prism/xonokai.js";
 
 interface Props {
   language: "solidity" | "typescript" | "javascript" | "rust" | "go";
@@ -47,7 +48,7 @@ export default function PrettyCode({
   }, []);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="defaultScroll">
       <SyntaxHighlighter
         language={language}
         style={xonokai}
