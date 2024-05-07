@@ -27,6 +27,6 @@ jobs:
           dist_path: dist
           alias_domain: "msgport-home-stg"
           enable_cache: true
-          enable_notify_slack: false
+          enable_notify_slack: true
           slack_channel: public-msgport
           slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
