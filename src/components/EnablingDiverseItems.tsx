@@ -11,7 +11,7 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
   const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[2];
 
   return (
-    <div className="lg:max-w-[27.313rem] xl:max-w-[35rem] 2xl:max-w-[40.625rem] 4xl:max-w-[50.625rem]">
+    <div className="lg:max-w-[27.313rem] xl:max-w-[35rem] 2xl:max-w-[40.625rem] 4xl:max-w-[50.625rem] 5xl:min-w-[70.625rem]">
       {isDiverse && (
         <div>
           <h3 className="text-[1.875rem] leading-[2.375rem] lg:text-[2.875rem] lg:leading-[3.625rem] font-[300] text-white">
@@ -30,13 +30,13 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
           Order Clearing(Thirdparty bridge)
         </h4>
       )}
-      <p className="text-[0.875rem] leading-[1.375rem] lg:text-[1rem] lg:leading-[1.563rem] font-[300] text-white my-[1.875rem]">
+      <p className="text-[0.875rem] leading-[1.375rem] lg:text-[1rem] lg:leading-[1.563rem] font-[300] text-[#F6F6F7] my-[1.875rem]">
         {text}
       </p>
       <PrettyCode
         code={activeMenu.code}
         language={activeMenu.language}
-        className="lg:max-w-[27.313rem] xl:max-w-[40.625rem] 4xl:max-w-[50.625rem]"
+        className="lg:max-w-[27.313rem] xl:max-w-[40.625rem] 4xl:max-w-[50.625rem] 5xl:max-w-[70.625rem]"
       />
       <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.875rem] px-[0.625rem]">
         <span className="font-[300] text-[1rem] text-white leading-[1.563rem]">

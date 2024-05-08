@@ -10,7 +10,7 @@ const HowItWorks = () => {
         </span>
       </div>
       <div className="mt-[1.875rem] 3xl:mt-0 4xl:mt-[3.125rem] lg:flex lg:gap-[3.125rem] 3xl:gap-[6.25rem] gap-[6.25rem] lg:bg-[#0d150fb3] w-full">
-        <div className="relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem]">
+        <div className="relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem] 5xl:w-[48.125rem]">
           <img
             src="/assets/icons/green.svg"
             alt="green"
@@ -26,7 +26,7 @@ const HowItWorks = () => {
             technologies
           </p>
         </div>
-        <div className="mt-[1.875rem] lg:mt-0 relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem]">
+        <div className="mt-[1.875rem] lg:mt-0 relative pl-[1.875rem] lg:w-[27.313rem] 3xl:w-[30.625rem] 5xl:w-[48.125rem]">
           <img
             src="/assets/icons/green.svg"
             alt="green"

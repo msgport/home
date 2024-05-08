@@ -14,7 +14,7 @@ interface ChainFreeItemsProps {
 
 const ChainFreeItems: React.FC<ChainFreeItemsProps> = ({ data }) => {
   return (
-    <div className="lg:w-[27.313rem] 2xl:w-[38rem] 3xl:w-[40.625rem] 2xl:h-[17.688rem] 4xl:w-[50.625rem]">
+    <div className="lg:w-[27.313rem] 2xl:w-[38rem] 3xl:w-[40.625rem] 2xl:h-[17.688rem] 4xl:w-[50.625rem] 5xl:w-[70.625rem]">
       <img
         src={data.icon}
         alt={data.greenTitle}

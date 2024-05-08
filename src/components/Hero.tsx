@@ -13,10 +13,10 @@ const Hero = () => {
         autoPlay
         loop
         muted
-        className="w-full lg:w-[43.813rem] 3xl:w-[56.25rem] lg:top-[3.75rem] lg:right-[3.125rem] lg:h-[25.625rem] 3xl:h-[32.813rem] lg:absolute 3xl:top-[6.25rem] 3xl:right-[6.25rem] object-cover lg:rounded-[500px] 4xl-[56.25rem]"
+        className="w-full lg:w-[43.813rem] 3xl:w-[56.25rem] lg:top-[3.75rem] lg:right-[3.125rem] lg:h-[25.625rem] 3xl:h-[32.813rem] lg:absolute 3xl:top-[6.25rem] 3xl:right-[6.25rem] object-cover lg:rounded-[500px] 4xl:w-[56.25rem] 5xl:w-[75rem] 5xl:h-[43.813rem]"
       ></video>
 
-      <div className="mt-[1.875rem] 2xl:mt-0 flex items-center justify-center flex-col lg:block lg:w-[51.688rem] lg:h-[22.188rem] lg:absolute lg:top-[28.125rem] 2xl:right-[42.063rem] 4xl:right-[62.063rem]">
+      <div className="mt-[1.875rem] 2xl:mt-0 flex items-center justify-center flex-col lg:block lg:w-[51.688rem] lg:h-[22.188rem] lg:absolute lg:top-[28.125rem] 2xl:right-[42.063rem] 4xl:right-[62.063rem] 5xl:right-[102.063rem]">
         <h4 className="text-[#fff] text-[1.25rem] lg:text-[3.75rem] font-[300] lg:leading-[4.755rem] lg:tracking-[0.125rem] ">
           Programmable
         </h4>
