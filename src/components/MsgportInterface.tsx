@@ -37,7 +37,7 @@ const MsgportInterface = () => {
 
         {data.map((item) => {
           return (
-            <div>
+            <div className="w-full">
               <button
                 key={item.id}
                 className={
