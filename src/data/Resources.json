@@ -1,5 +1,22 @@
 [
     {
-        "logo" : ""
-    }
+        "logo" : "/images/MsgportGitHub.png" ,
+        "title" : "Msgport GitHub" ,
+        "desc" : "An open-source repo providing interfaces and tools for blockchain interoperability and communication."
+    } ,
+    {
+        "logo" : "/images/MessagesExplorer.png" ,
+        "title" : "Darwinia Messages Explorer" ,
+        "desc" : "It serves as a comprehensive platform for following transactions over the Msgport, helping users and developers to manage and analyze cross-chain data more effectively."
+    } ,
+    {
+        "logo" : "/images/TechnicalDocs.png" ,
+        "title" : "Technical Docs" ,
+        "desc" : "Start building your Cross-Chain DApp with Msgport."
+    } ,
+    {
+        "logo" : "/images/DeveloperAssistance.png" ,
+        "title" : "Developer Assistance" ,
+        "desc" : "Chat with other developers in the Developer Community, share your ideas and get answers to your technical questions."
+    } 
 ]

@@ -6,7 +6,7 @@ import HowItWorks from "./HowItWorks";
 
 const ChainFree: React.FC = () => {
   return (
-    <Container classes="mt-[12.5rem] lg:mt-[6.25rem] lg:min-h-[120rem] relative relative">
+    <Container classes="mt-[6.25rem] lg:mt-[6.25rem] lg:min-h-[120rem] relative relative">
       <div className="flex-col lg:flex-row flex items-center gap-[1.875rem] lg:gap-[3.125rem] 3xl:gap-[6.25rem] lg:flex-wrap">
         {data.map((item) => (
           <ChainFreeItems key={item.id} data={item} />
