@@ -45,14 +45,14 @@ const Header = () => {
         <div className="bg-[#000000b3] rounded-[1.25rem] flex flex-col items-center justify-center p-[2.5rem] absolute right-[1.25rem] top-[3.125rem] gap-[2.5rem]">
           <a
             target="_blank"
-            href=" https://docs.msgport.xyz/learn/interfaces/"
+            href="https://docs.msgport.xyz/"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
             Learn
           </a>
           <a
             target="_blank"
-            href="https://docs.msgport.xyz/build/use-cases/overview/"
+            href="https://docs.msgport.xyz/build/networks/"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
             Build
