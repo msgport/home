@@ -37,15 +37,22 @@ body {
 
 
 .defaultScroll {
-  /* Change background color of scroll */
   ::-webkit-scrollbar {
-    background-color: transparent; /* Change to black */
+    background-color: transparent; 
     height: 0.5rem;
   }
 
-  /* Change scrollbar thumb color */
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(118, 180, 230); /* Change to pink */
+    background-color: #00D448 ; 
     border-radius: 0.5rem;
   }
+}
+
+.btnHover {
+  transition: all 0.3s ease;
+}
+
+.btnHover:hover img {
+  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(500%) hue-rotate(95deg) brightness(110%) contrast(100%);
 }

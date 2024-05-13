@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,8 +10,18 @@ export default {
     extend: {
       screens: {
         '3xl': '1600px',
-        '4xl' : '1920px'
+        '4xl' : '1920px',
+        '5xl' : '2560px'
       },
+      animation : {
+        "loop-scroll" : "loop-scroll 50s linear infinite"
+      } ,
+      keyframes : {
+        "loop-scroll" : {
+          from : {transform : "translateX(0)"} ,
+          to : {transform : "translateX(-100%)"}
+        }
+      }
     },
   },
   plugins: [],

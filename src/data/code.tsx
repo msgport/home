@@ -8,8 +8,9 @@ export const menu: {
     title: "Msgport Interface",
     description:
       "This interface provides developers with a generic message passing interface to send arbitrary data between contracts on different blockchain networks.",
-    code: `// This file is part of Darwinia.
-  // Copyright (C) 2018-2023 Darwinia Network
+    code: `
+  // This file is part of Msgport.
+  // Copyright (C) 2024 Msgport
   // SPDX-License-Identifier: GPL-3.0
   
   pragma solidity ^0.8.0;
@@ -43,13 +44,14 @@ export const menu: {
     title: "Deploy ExampleReceiverDapp",
     description:
       "Deploy a receiver contract on the target chain to receive messages. (for example purposes only)",
-    code: `// This file is part of Darwinia.
-  // Copyright (C) 2018-2023 Darwinia Network
+    code: `
+  // This file is part of Msgport.
+  // Copyright (C) 2024 Msgport
   // SPDX-License-Identifier: GPL-3.0
   
   pragma solidity ^0.8.17;
   
-  import "https://github.com/darwinia-network/darwinia-msgport/blob/main/src/user/Application.sol";
+  import "https://github.com/msgport/msgport/blob/main/src/user/Application.sol";
   
   contract ExampleReceiverDapp is Application {
       event DappMessageRecv(uint256 fromChainId, address fromDapp, address localPort, bytes message);
@@ -79,7 +81,8 @@ export const menu: {
   {
     title: "Encode calldata",
     description: "Build the remote call data as the message payload.",
-    code: `import { ethers } from 'ethers';
+    code: `
+  import { ethers } from 'ethers';
   
   const privateKey = process.env.PRIVATE_KEY;
   const providerUrl = <Your RPC provider URL>;
@@ -124,7 +127,7 @@ export const menu: {
           'to_address': <ReceiverAddress>,
           'refund_address': <RefundAddress>,
       };
-      const result = await axios.get("https://msgport-api.darwinia.network/ormp/fee", { params: requestBody });
+      const result = await axios.get("https://api.msgport.xyz/ormp/fee", { params: requestBody });
       const { fee, params } = result.data.data;
       console.log(fee, params);
   }
@@ -135,13 +138,13 @@ export const menu: {
   {
     title: "Sending message",
     description: "",
-    code: `// This file is part of Darwinia.
-  // Copyright (C) 2018-2023 Darwinia Network
+    code: `// This file is part of Msgport.
+  // Copyright (C) 2024 Msgport
   // SPDX-License-Identifier: GPL-3.0
   
   pragma solidity ^0.8.17;
   
-  import "https://github.com/darwinia-network/darwinia-msgport/blob/main/src/interfaces/IMessagePort.sol";
+  import "https://github.com/msgport/msgport/blob/main/src/interfaces/IMessagePort.sol";
   
   contract ExampleSenderDapp {
       event DappMessageSent(address localPort, bytes message);
