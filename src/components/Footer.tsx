@@ -7,7 +7,7 @@ const Footer = () => {
         @ 2024 Msgport
       </p>
       <div className="flex items-center gap-[1.25rem] lg:gap-[1.875rem]">
-        <a href="" target="_blank">
+        <a href="" target="_blank" className="hidden">
           <img src="/assets/icons/x.svg" alt="x" />
         </a>
         <a href=" https://t.me/msgport " target="_blank">

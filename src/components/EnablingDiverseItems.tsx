@@ -38,16 +38,25 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
         language={activeMenu.language}
         className="lg:max-w-[27.313rem] xl:max-w-[40.625rem] 4xl:max-w-[50.625rem] 5xl:max-w-[70.625rem]"
       />
-      <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.875rem] px-[0.625rem]">
-        <span className="font-[300] text-[1rem] text-white leading-[1.563rem]">
-          View use case in docs
-        </span>
-        <img
-          src="/assets/icons/go.svg"
-          alt="goArrow"
-          className="w-[1.5rem] h-[1.5rem]"
-        />
-      </button>
+      <a
+        href={
+          isDiverse
+            ? "https://docs.msgport.xyz/learn/use-cases/xaccount/"
+            : "https://docs.msgport.xyz/learn/use-cases/order-xclearing/"
+        }
+        target="_blank"
+      >
+        <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.875rem] px-[0.625rem]">
+          <span className="font-[300] text-[1rem] text-white leading-[1.563rem]">
+            View use case in docs
+          </span>
+          <img
+            src="/assets/icons/go.svg"
+            alt="goArrow"
+            className="w-[1.5rem] h-[1.5rem]"
+          />
+        </button>
+      </a>
     </div>
   );
 };

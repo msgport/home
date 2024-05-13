@@ -21,11 +21,13 @@ const Governed = () => {
               className="w-[2.75rem] h-[2.75rem] lg:w-[4.625rem] lg:h-[4.625rem]"
             />
           </a>
-          <img
-            src="/images/GovernedLogo2.png"
-            alt=""
-            className="w-[2.75rem] h-[2.75rem] lg:w-[4.625rem] lg:h-[4.625rem]"
-          />
+          <a href="https://github.com/xapi-box" target="_blank">
+            <img
+              src="/images/GovernedLogo2.png"
+              alt=""
+              className="w-[2.75rem] h-[2.75rem] lg:w-[4.625rem] lg:h-[4.625rem]"
+            />
+          </a>
         </div>
       </div>
     </Container>

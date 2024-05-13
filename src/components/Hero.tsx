@@ -20,22 +20,27 @@ const Hero = () => {
         <h4 className="text-[#fff] text-[1.25rem] leading-[1.563rem] lg:text-[3.75rem] font-[300] lg:leading-[4.755rem] tracking-[0.125rem]">
           Programmable
         </h4>
-        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left">
+        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left lg:mt-[1.25rem]">
           CROSS-CHAIN
         </h1>
-        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left">
+        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left mt-[-0.8rem] lg:mt-0">
           MESSAGING PORT
         </h1>
-        <button className="flex items-center py-[0.5rem] px-[0.625rem] lg:pr-[0.625rem] lg:pl-[0.938rem] lg:py-[1.094rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem]">
-          <span className="font-[300] text-[1rem] lg:font-[500] lg:text-[1.25rem] text-white">
-            Get Started
-          </span>
-          <img
-            src="/assets/icons/go.svg"
-            alt="goArrow"
-            className="w-[1.5rem] h-[1.5rem]"
-          />
-        </button>
+        <a
+          href=" https://docs.msgport.xyz/build/tutorial/remix-demo/"
+          target="_blank"
+        >
+          <button className="flex items-center py-[0.5rem] pr-[0.625rem] pl-[0.938rem] lg:py-[1.094rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem]">
+            <span className="font-[300] text-[1rem] lg:font-[500] lg:text-[1.25rem] text-white">
+              Get Started
+            </span>
+            <img
+              src="/assets/icons/go.svg"
+              alt="goArrow"
+              className="w-[1.5rem] h-[1.5rem]"
+            />
+          </button>
+        </a>
       </div>
     </Container>
   );
