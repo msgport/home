@@ -7,9 +7,14 @@
     } ,
     {
         "logo" : "/images/MessagesExplorer.png" ,
+<<<<<<< HEAD
         "title" : "Darwinia Messages Explorer" ,
         "desc" : "It serves as a comprehensive platform for following transactions over the Msgport, helping users and developers to manage and analyze cross-chain data more effectively." ,
         "link" : "https://scan.msgport.xyz/"
+=======
+        "title" : "Msgport Scan Explorer" ,
+        "desc" : "It serves as a comprehensive platform for following transactions over the Msgport, helping users and developers to manage and analyze cross-chain data more effectively."
+>>>>>>> 50960ad1ca9d0f59398af8086eaaaaaabe8b6460
     } ,
     {
         "logo" : "/images/TechnicalDocs.png" ,
