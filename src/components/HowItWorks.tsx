@@ -42,7 +42,7 @@ const HowItWorks = () => {
           </p>
           <p className="text-[1rem] leading-[1.563rem] font-[300] text-white ">
             With Msgport service layer, direct usage is simplified, while the
-            Darwinia open-source community handle the intricate integration and
+            Msgport open-source community handle the intricate integration and
             construction efforts
           </p>
         </div>
