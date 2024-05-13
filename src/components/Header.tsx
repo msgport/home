@@ -13,14 +13,14 @@ const Header = () => {
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
         <a
           target="_blank"
-          href=" https://docs.msgport.xyz/learn/interfaces/"
+          href="https://docs.msgport.xyz/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Learn
         </a>
         <a
           target="_blank"
-          href="https://docs.msgport.xyz/build/use-cases/overview/"
+          href="https://docs.msgport.xyz/build/networks/"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Build
