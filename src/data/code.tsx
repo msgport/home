@@ -8,7 +8,8 @@ export const menu: {
     title: "Msgport Interface",
     description:
       "This interface provides developers with a generic message passing interface to send arbitrary data between contracts on different blockchain networks.",
-    code: `// This file is part of Msgport.
+    code: `
+  // This file is part of Msgport.
   // Copyright (C) 2024 Msgport
   // SPDX-License-Identifier: GPL-3.0
   
@@ -43,7 +44,8 @@ export const menu: {
     title: "Deploy ExampleReceiverDapp",
     description:
       "Deploy a receiver contract on the target chain to receive messages. (for example purposes only)",
-    code: `// This file is part of Msgport.
+    code: `
+  // This file is part of Msgport.
   // Copyright (C) 2024 Msgport
   // SPDX-License-Identifier: GPL-3.0
   
@@ -79,7 +81,8 @@ export const menu: {
   {
     title: "Encode calldata",
     description: "Build the remote call data as the message payload.",
-    code: `import { ethers } from 'ethers';
+    code: `
+  import { ethers } from 'ethers';
   
   const privateKey = process.env.PRIVATE_KEY;
   const providerUrl = <Your RPC provider URL>;
