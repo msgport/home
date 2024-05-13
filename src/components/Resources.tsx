@@ -26,8 +26,8 @@ const Resources = () => {
                 {item.desc}
               </p>
               <a href={item.link} target="_blank">
-                <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[2.5rem] px-[0.625rem]">
-                  <span className="font-[600] text-[1rem] text-white leading-[1.563rem]">
+                <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[2.5rem] px-[0.625rem] hover:text-[#00D448] hover:border-[#00D448] text-white btnHover">
+                  <span className="font-[600] text-[1rem]leading-[1.563rem]">
                     Detail
                   </span>
                   <img

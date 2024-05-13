@@ -46,8 +46,8 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
         }
         target="_blank"
       >
-        <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.875rem] px-[0.625rem]">
-          <span className="font-[300] text-[1rem] text-white leading-[1.563rem]">
+        <button className="flex items-center justify-center py-[0.438rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.875rem] px-[0.625rem] btnHover hover:text-[#00D448] hover:border-[#00D448] text-white">
+          <span className="font-[300] text-[1rem] leading-[1.563rem]">
             View use case in docs
           </span>
           <img

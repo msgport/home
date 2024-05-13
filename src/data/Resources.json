@@ -8,7 +8,8 @@
     {
         "logo" : "/images/MessagesExplorer.png" ,
         "title" : "Msgport Scan Explorer" ,
-        "desc" : "It serves as a comprehensive platform for following transactions over the Msgport, helping users and developers to manage and analyze cross-chain data more effectively."
+        "desc" : "It serves as a comprehensive platform for following transactions over the Msgport, helping users and developers to manage and analyze cross-chain data more effectively." ,
+        "link" : "https://scan.msgport.xyz/"
     } ,
     {
         "logo" : "/images/TechnicalDocs.png" ,

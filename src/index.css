@@ -48,3 +48,11 @@ body {
   }
 }
 
+.btnHover {
+  transition: all 0.3s ease;
+}
+
+.btnHover:hover img {
+  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(500%) hue-rotate(95deg) brightness(110%) contrast(100%);
+}

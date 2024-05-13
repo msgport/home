@@ -30,14 +30,14 @@ const Hero = () => {
           href=" https://docs.msgport.xyz/build/tutorial/remix-demo/"
           target="_blank"
         >
-          <button className="flex items-center py-[0.5rem] pr-[0.625rem] pl-[0.938rem] lg:py-[1.094rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem]">
-            <span className="font-[300] text-[1rem] lg:font-[500] lg:text-[1.25rem] text-white">
+          <button className="flex items-center py-[0.5rem] pr-[0.625rem] pl-[0.938rem] lg:py-[1.125rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem] hover:text-[#00D448] hover:border-[#00D448] transition-all delay-75  text-white btnHover">
+            <span className="font-[300] text-[1rem] lg:font-[500] lg:text-[1.25rem]">
               Get Started
             </span>
             <img
               src="/assets/icons/go.svg"
               alt="goArrow"
-              className="w-[1.5rem] h-[1.5rem]"
+              className="w-[1.5rem] h-[1.5rem] transition-all delay-75"
             />
           </button>
         </a>
