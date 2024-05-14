@@ -5,7 +5,7 @@ import { menu } from "../data/code";
 import data from "../data/BuildMsgButtons.json";
 
 const MsgportInterface = () => {
-  const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedItem, setSelectedItem] = useState(1);
 
   const activeMenu =
     menu.find((item) => item.title === data[selectedItem - 1]?.text) || menu[0];
