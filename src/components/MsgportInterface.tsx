@@ -16,7 +16,7 @@ const MsgportInterface = () => {
         <h2 className="text-[1.875rem] leading-[2.375rem] font-bold text-white tracking-[0.063rem]">
           {activeMenu.title}
         </h2>
-        <p className="text-[1rem] leading-[1.563rem] font-[300] text-white mb-[1.875rem] mt-[0.625rem] opacity-60 tracking-[0.063rem]">
+        <p className="text-[1rem] leading-[1.563rem] font-[300] text-white mb-[1.875rem] mt-[0.625rem] opacity-60 tracking-[0.063rem] text-right">
           {activeMenu.description}
         </p>
         <PrettyCode
@@ -36,11 +36,12 @@ const MsgportInterface = () => {
           <div className="w-full" key={item.id}>
             <button
               className={
-                "text-[#000000] lg:text-[#2A2A2A] text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] lg:flex items-center justify-center py-[1.063rem] lg:px-[1.25rem] "
+                "text-[#000000] text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] lg:flex items-center justify-center py-[1.063rem] lg:px-[1.25rem] "
               }
               style={{
                 backgroundColor:
                   selectedItem === item.id ? item.selected : item.bg,
+                color: selectedItem === item.id ? "#2a2a2a" : "#000000",
               }}
               onClick={() => setSelectedItem(item.id)}
             >
