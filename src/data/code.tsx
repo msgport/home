@@ -137,7 +137,8 @@ export const menu: {
   },
   {
     title: "Sending Message",
-    description: "",
+    description:
+      "Sending massage via Msgport to dapp on target chain using encoded message data and params provided in previous steps.",
     code: `pragma solidity ^0.8.17;
 
     import "https://github.com/msgport/msgport/blob/main/src/interfaces/IMessagePort.sol";
