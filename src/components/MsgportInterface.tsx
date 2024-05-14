@@ -95,17 +95,21 @@ const MsgportInterface = () => {
             </button>
           );
         })} */}
-        <a href="https://github.com/msgport/msgport-demo" target="_blank">
+        <a
+          href="https://github.com/msgport/msgport-demo"
+          target="_blank"
+          className="w-full"
+        >
           <button className="flex items-center justify-center py-[0.563rem] lg:py-[1.063rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] w-full hover:text-[#00D448] hover:border-[#00D448] text-white btnHover">
-          <span className="font-[600] text-[1rem] leading-[1.563rem] tracking-[0.063rem]">
-            Try it now
-          </span>
-          <img
-            src="/assets/icons/go.svg"
-            alt="goArrow"
-            className="w-[1.5rem] h-[1.5rem]"
-          />
-        </button>
+            <span className="font-[600] text-[1rem] leading-[1.563rem] tracking-[0.063rem]">
+              Try it now
+            </span>
+            <img
+              src="/assets/icons/go.svg"
+              alt="goArrow"
+              className="w-[1.5rem] h-[1.5rem]"
+            />
+          </button>
         </a>
       </div>
     </Container>
