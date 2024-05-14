@@ -36,7 +36,7 @@ const MsgportInterface = () => {
           <div className="w-full" key={item.id}>
             <button
               className={
-                "text-[#000000] text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] lg:flex items-center justify-center py-[1.063rem] lg:px-[1.25rem] "
+                "text-[1rem] font-[600] leading-[1.563rem] w-full rounded-[4rem] lg:flex items-center justify-center py-[1.063rem] lg:px-[1.25rem] "
               }
               style={{
                 backgroundColor:
