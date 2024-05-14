@@ -19,7 +19,7 @@ const Resources = () => {
                 alt={item.title}
                 className="w-[4.375rem] h-[4.375rem] mb-[2.5rem]"
               />
-              <h3 className="text-[1.375rem] leading-[1.75rem] tracking-[0.063rem] text-[#F6F6F7] font-[700]">
+              <h3 className="text-[1.375rem] leading-[1.75rem] tracking-[0.063rem] text-[#F6F6F7] font-[700] mb-[10px]">
                 {item.title}
               </h3>
               <p className="text-[1rem] leading-[1.563rem] tracking-[0.063rem] text-[#F6F6F7] font-[300]">
