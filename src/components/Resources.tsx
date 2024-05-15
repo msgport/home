@@ -7,11 +7,11 @@ const Resources = () => {
       <h2 className="text-[#00D448] text-[2.875rem] leading-[3.625rem] tracking-[0.125rem] font-[700] mb-[1.875rem] lg:mb-[6.25rem]">
         Resources
       </h2>
-      <div className="flex flex-col lg:flex-row lg:flex-wrap gap-[1.875rem] lg:gap-[3.125rem] justify-center items-start">
+      <div className="flex flex-col lg:flex-row lg:flex-wrap 2xl:flex-nowrap gap-[1.875rem] lg:gap-[3.125rem] justify-center items-start">
         {data.map((item) => {
           return (
             <div
-              className="bg-[#2A2A2A] p-[1.875rem] rounded-[1.25rem] lg:w-[27.125rem] lg:h-[26.25rem] 2xl:h-auto 2xl:w-[19.531rem] 4xl:w-[24.5rem] 5xl:w-[34.5rem]"
+              className="bg-[#2A2A2A] p-[1.875rem] rounded-[1.25rem] lg:w-[27.125rem] lg:h-[26.25rem] 2xl:h-auto 2xl:flex-grow 2xl:flex-shrink"
               key={item.title}
             >
               <img
