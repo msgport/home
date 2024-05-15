@@ -226,7 +226,6 @@ contract LnBridgeTargetV3 {
         for (uint i = 0; i < _transferIds.length; i++) {
             bytes32 transferId = _transferIds[i];
             FillTransfer memory fillTransfer = fillTransfers[transferId];
-            // make sure that each transfer has the same provider
             require(fillTransfer.provider == _provider, "provider invalid");
         }
         bytes memory message = encodeWithdrawLiquidityRequest(_transferIds, _provider);
@@ -240,8 +239,6 @@ contract LnBridgeTargetV3 {
         ILowLevelMessageSender(sendService).sendMessage{value: feePrepaid}(_remoteChainId, _payload, _extParams);
     }
 }
-
-pragma solidity ^0.8.17;
 
 // # ...（omitted code）...
 
@@ -257,12 +254,7 @@ contract MsgportMessager is Application, AccessController {
         address remoteAppAddress = remoteAppReceivers[key];
         require(remoteAppAddress != address(0), "app pair not registered");
         bytes memory msgportPayload = messagePayload(msg.sender, remoteAppAddress, _message);
-        msgport.send{ value: msg.value }(
-            remoteMessager.msgportRemoteChainId,
-            remoteMessager.messager,
-            msgportPayload,
-            _params
-        );
+        msgport.send{ value: msg.value }(remoteMessager.msgportRemoteChainId, remoteMessager.messager, msgportPayload, _params);
     }
 }`,
     language: "solidity",
