@@ -9,7 +9,6 @@ export const menu: {
     description:
       "This interface provides developers with a generic message passing interface to send arbitrary data between contracts on different blockchain networks.",
     code: `
-    // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
     
     interface IMessagePort {
@@ -49,7 +48,7 @@ export const menu: {
     title: "Deploy ExampleReceiverDapp",
     description:
       "Deploy a receiver contract on the target chain to receive messages. (for example purposes only)",
-    code: `// SPDX-License-Identifier: MIT
+    code: `
     pragma solidity ^0.8.17;
     
     import "https://github.com/msgport/msgport/blob/main/src/user/Application.sol";
@@ -82,7 +81,8 @@ export const menu: {
   {
     title: "Encode Calldata",
     description: "Build the remote call data as the message payload.",
-    code: `import { ethers } from 'ethers';
+    code: `
+    import { ethers } from 'ethers';
 
     const privateKey = process.env.PRIVATE_KEY;
     const providerUrl = <Your RPC provider URL>;
@@ -116,7 +116,8 @@ export const menu: {
   {
     title: "Get Fee And Params From Msgport API",
     description: "Estimate fee and get adaptation params from Msgport API.",
-    code: `import axios from 'axios';
+    code: `
+    import axios from 'axios';
 
     async function getFeeParams() {
         const requestBody = {
@@ -139,7 +140,8 @@ export const menu: {
     title: "Sending Message",
     description:
       "Sending massage via Msgport to dapp on target chain using encoded message data and params provided in previous steps.",
-    code: `pragma solidity ^0.8.17;
+    code: `
+    pragma solidity ^0.8.17;
 
     import "https://github.com/msgport/msgport/blob/main/src/interfaces/IMessagePort.sol";
     
@@ -163,7 +165,8 @@ export const menu: {
   {
     title: "XAccount",
     description: "",
-    code: `pragma solidity ^0.8.0;
+    code: `
+    pragma solidity ^0.8.0;
 
     contract ExampleXAccount {
         // XAccountFactory address
@@ -206,8 +209,7 @@ export const menu: {
   {
     title: "Order Clearing",
     description: "",
-    code: `// SPDX-License-Identifier: MIT
-
+    code: `
     pragma solidity ^0.8.17;
     
     contract MsglineMessager is Application, AccessController {
