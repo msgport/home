@@ -7,8 +7,12 @@ interface EnablingDiverseTypes {
 }
 
 const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
-  const activeTitle = menu[2].title;
-  const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[2];
+  const activeTitle = menu[5].title;
+  const activeMenu = menu.find(({ title }) => title === activeTitle) || menu[5];
+
+  const activeTitleOrder = menu[6].title;
+  const activeMenuOrder =
+    menu.find(({ title }) => title === activeTitleOrder) || menu[6];
 
   return (
     <div className="lg:max-w-[27.313rem] xl:max-w-[35rem] 2xl:max-w-[40.625rem] 4xl:max-w-[50.625rem] 5xl:min-w-[70.625rem]">
@@ -34,8 +38,8 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
         {text}
       </p>
       <PrettyCode
-        code={activeMenu.code}
-        language={activeMenu.language}
+        code={isDiverse ? activeMenu.code : activeMenuOrder.code}
+        language={isDiverse ? activeMenu.language : activeMenuOrder.language}
         className="lg:max-w-[27.313rem] xl:max-w-[40.625rem] 4xl:max-w-[50.625rem] 5xl:max-w-[70.625rem]"
       />
       <a
