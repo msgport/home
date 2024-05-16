@@ -11,7 +11,7 @@ const Resources = () => {
         {data.map((item) => {
           return (
             <div
-              className="bg-[#2A2A2A] p-[1.875rem] rounded-[1.25rem] lg:w-[27.125rem] lg:h-[26.25rem] 2xl:h-auto 2xl:flex-grow 2xl:flex-shrink"
+              className="bg-[#2A2A2A] p-[1.875rem] rounded-[1.25rem] w-full lg:w-[27.125rem] lg:h-[26.25rem] 2xl:h-auto 2xl:flex-grow 2xl:flex-shrink"
               key={item.title}
             >
               <img
