@@ -1,6 +1,8 @@
+import useWidth from "../hooks/useWidth";
 import Container from "./Container";
 
 const Hero = () => {
+  const width = useWidth();
   return (
     <Container classes='lg:bg-[url("/images/heroBG.png")] bg-cover lg:relative mt-[6.25rem] lg:mt-0 lg:min-h-[59.75rem]'>
       {/* <img
@@ -9,7 +11,7 @@ const Hero = () => {
         className="w-full lg:w-[56.25rem] lg:h-[32.813rem] lg:absolute lg:top-[6.25rem] lg:right-[6.25rem] object-cover"
       /> */}
       <video
-        src={window.innerWidth > 1200 ? "/images/hero.mp4" : "/images/hero-m.mp4"}
+        src={width > 1200 ? "/images/hero.mp4" : "/images/hero-m.mp4"}
         autoPlay
         loop
         muted
