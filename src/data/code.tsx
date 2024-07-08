@@ -1,14 +1,14 @@
 export const menu: {
-  title: string;
-  description: string;
-  code: string;
-  language: "solidity" | "javascript";
+   title: string;
+   description: string;
+   code: string;
+   language: "solidity" | "javascript";
 }[] = [
-  {
-    title: "Msgport Interface",
-    description:
-      "This interface provides developers with a generic message passing interface to send arbitrary data between contracts on different blockchain networks.",
-    code: `
+   {
+      title: "Msgport Interface",
+      description:
+         "This interface provides developers with a generic message passing interface to send arbitrary data between contracts on different blockchain networks.",
+      code: `
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
     
@@ -43,13 +43,13 @@ export const menu: {
             view
             returns (uint256);
     }`,
-    language: "solidity",
-  },
-  {
-    title: "Deploy ExampleReceiverDapp",
-    description:
-      "Deploy a receiver contract on the target chain to receive messages. (for example purposes only)",
-    code: `
+      language: "solidity",
+   },
+   {
+      title: "Deploy ExampleReceiverDapp",
+      description:
+         "Deploy a receiver contract on the target chain to receive messages. (for example purposes only)",
+      code: `
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.17;
     
@@ -78,12 +78,12 @@ export const menu: {
             emit DappMessageRecv(fromChainId, fromDapp, localPort, message);
         }
     }`,
-    language: "solidity",
-  },
-  {
-    title: "Encode Calldata",
-    description: "Build the remote call data as the message payload.",
-    code: `
+      language: "solidity",
+   },
+   {
+      title: "Encode Calldata",
+      description: "Build the remote call data as the message payload.",
+      code: `
     import { ethers } from 'ethers';
 
     const privateKey = process.env.PRIVATE_KEY;
@@ -113,36 +113,38 @@ export const menu: {
     }
     
     encodeReceiveCall();`,
-    language: "javascript",
-  },
-  {
-    title: "Get Fee And Params From Msgport API",
-    description: "Estimate fee and get adaptation params from Msgport API.",
-    code: `
+      language: "javascript",
+   },
+   {
+      title: "Get Fee And Params From Msgport API",
+      description: "Estimate fee and get adaptation params from Msgport API.",
+      code: `
     import axios from 'axios';
 
     async function getFeeParams() {
         const requestBody = {
-            'from_chain_id': <SourceChainID>,
-            'to_chain_id': <TargetChainID>,
-            'payload': <EncodeCallData>,
-            'from_address': <SenderAddress>,
-            'to_address': <ReceiverAddress>,
-            'refund_address': <RefundAddress>,
+            "fromChainId": <SourceChainID>,
+            "fromAddress": <SenderAddress>,
+            "toChainId": <TargetChainID>,
+            "toAddress": <ReceiverAddress>,
+            "message": <EncodedCallData>,
+            "ormp": {
+            "refundAddress": <RefundAddress>
+            }
         };
-        const result = await axios.get("https://api.msgport.xyz/ormp/fee", { params: requestBody });
+        const result = await axios.post("https://api.msgport.xyz/v2/fee_with_options", requestBody);
         const { fee, params } = result.data.data;
         console.log(fee, params);
     }
-    
+
     await getFeeParams();`,
-    language: "javascript",
-  },
-  {
-    title: "Sending Message",
-    description:
-      "Sending massage via Msgport to dapp on target chain using encoded message data and params provided in previous steps.",
-    code: `
+      language: "javascript",
+   },
+   {
+      title: "Sending Message",
+      description:
+         "Sending massage via Msgport to dapp on target chain using encoded message data and params provided in previous steps.",
+      code: `
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.17;
 
@@ -163,12 +165,12 @@ export const menu: {
             emit DappMessageSent(PORT, message);
         }
     }`,
-    language: "solidity",
-  },
-  {
-    title: "XAccount",
-    description: "",
-    code: `
+      language: "solidity",
+   },
+   {
+      title: "XAccount",
+      description: "",
+      code: `
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
 
@@ -208,12 +210,12 @@ export const menu: {
             IMessagePort(port).send{value: msg.value}(toChainId, module, message, params);
         }
     }`,
-    language: "solidity",
-  },
-  {
-    title: "Order Clearing",
-    description: "",
-    code: `
+      language: "solidity",
+   },
+   {
+      title: "Order Clearing",
+      description: "",
+      code: `
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.17;
     
@@ -277,6 +279,6 @@ export const menu: {
             );
         }
     }`,
-    language: "solidity",
-  },
+      language: "solidity",
+   },
 ];
