@@ -21,7 +21,7 @@ const Governed = () => {
               className="w-[2.75rem] h-[2.75rem] lg:w-[4.625rem] lg:h-[4.625rem]"
             />
           </a>
-          <a href="https://github.com/xapi-box" target="_blank">
+          <a href="https://github.com/ringecosystem/xapi" target="_blank">
             <img
               src="/images/GovernedLogo2.png"
               alt=""
