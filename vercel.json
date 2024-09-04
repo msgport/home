@@ -1,0 +1,10 @@
+{
+    "trailingSlash": true,
+    "rewrites": [
+        {
+            "source": "/docs/:path((?!docs).*)",
+            "destination": "https://msgport-docs.vercel.app/docs/:path*",
+            "permanent": true
+        }
+    ]
+}
