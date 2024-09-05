@@ -64,7 +64,7 @@ const MsgportInterface = () => {
           </div>
         ))}
         <a
-          href="https://github.com/msgport/msgport-demo"
+          href="https://github.com/ringecosystem/msgport-examples"
           target="_blank"
           className="w-full"
         >

@@ -13,7 +13,7 @@ const Footer = () => {
         <a href=" https://t.me/msgport" target="_blank">
           <img src="/assets/icons/telegram.svg" alt="telegram" />
         </a>
-        <a href="https://github.com/msgport" target="_blank">
+        <a href="https://github.com/ringecosystem/msgport" target="_blank">
           <img src="/assets/icons/github.svg" alt="github" />
         </a>
       </div>
