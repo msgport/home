@@ -27,7 +27,7 @@ const Header = () => {
         </a>
         <a
           target="_blank"
-          href="https://msgport.ringdao.com/community/ringdao.html"
+          href="https://msgport.ringdao.com/docs/community/ringdao.html"
           className="text-white text-[1rem] font-[600] leading-[1.563rem]"
         >
           Community
@@ -59,7 +59,7 @@ const Header = () => {
           </a>
           <a
             target="_blank"
-            href="https://msgport.ringdao.com/community/ringdao.html"
+            href="https://msgport.ringdao.com/docs/community/ringdao.html"
             className="text-white text-[1rem] font-[600] leading-[1.563rem]"
           >
             Community
