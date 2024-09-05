@@ -3,7 +3,7 @@
         "logo" : "/images/MsgportGitHub.png" ,
         "title" : "Msgport GitHub" ,
         "desc" : "An open-source repo providing interfaces and tools for blockchain interoperability and communication." ,
-        "link" : "https://github.com/msgport"
+        "link" : "https://github.com/ringecosystem/msgport"
     } ,
     {
         "logo" : "/images/MessagesExplorer.png" ,
@@ -15,7 +15,7 @@
         "logo" : "/images/TechnicalDocs.png" ,
         "title" : "Technical Docs" ,
         "desc" : "Start building your Cross-Chain DApp with Msgport." ,
-        "link" : "https://docs.msgport.xyz/"
+        "link" : "https://msgport.ringdao.com/docs/"
     } ,
     {
         "logo" : "/images/DeveloperAssistance.png" ,

@@ -53,7 +53,7 @@ export const menu: {
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.17;
     
-    import "https://github.com/msgport/msgport/blob/main/src/user/Application.sol";
+    import "https://github.com/ringecosystem/msgport/blob/main/src/user/Application.sol";
     
     contract ExampleReceiverDapp is Application {
         event DappMessageRecv(uint256 fromChainId, address fromDapp, address localPort, bytes message);
@@ -148,7 +148,7 @@ export const menu: {
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.17;
 
-    import "https://github.com/msgport/msgport/blob/main/src/interfaces/IMessagePort.sol";
+    import "https://github.com/ringecosystem/msgport/blob/main/src/interfaces/IMessagePort.sol";
     
     contract ExampleSenderDapp {
         event DappMessageSent(address localPort, bytes message);
