@@ -45,8 +45,8 @@ const EnablingDiverseItems = ({ isDiverse, text }: EnablingDiverseTypes) => {
       <a
         href={
           isDiverse
-            ? "https://docs.msgport.xyz/learn/use-cases/xaccount/"
-            : "https://docs.msgport.xyz/learn/use-cases/order-xclearing/"
+            ? "https://msgport.ringdao.com/docs/learn/use-cases/xaccount.html"
+            : "https://msgport.ringdao.com/docs/learn/use-cases/order-xclearing.html"
         }
         target="_blank"
       >
