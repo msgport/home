@@ -29,7 +29,7 @@ const Hero = () => {
           MESSAGING PORT
         </h1>
         <a
-          href=" https://docs.msgport.xyz/build/tutorial/remix-demo/"
+          href="https://msgport.ringdao.com/docs/index.html"
           target="_blank"
         >
           <button className="flex items-center py-[0.5rem] pr-[0.625rem] pl-[0.938rem] lg:py-[1.125rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem] hover:text-[#00D448] hover:border-[#00D448] text-white btnHover">
